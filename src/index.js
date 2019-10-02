@@ -1,4 +1,6 @@
-import app from './app';
+import express from "express";
 
-const { PORT = 8080 } = process.env;
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`)); // eslint-disable-line no-console
+let app = express();
+app.listen(3400, function () {
+  console.log(`Server is listening on port 3400`)
+});
